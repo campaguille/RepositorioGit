@@ -2,8 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Introduzca un nombre, edad y estatura: ");
-        Scanner sc = new Scanner (System.in);
-        String frase = sc.nextLine();
+        String frase = "Guillermo 18 1,70";
+
+        Scanner sc = new Scanner(frase);
+
+        String name = sc.next();
+        int age = sc.nextInt();
+        double stature = sc.nextDouble();
+
+        System.out.println("Nombre: " + name + "\nEdad: " + age + "\nEstatura: " + stature);
+
     }
 }
